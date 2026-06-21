@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Second Vector Brief</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/b468c57c74d38de9978cc466e927c1d0/ctfd-favicon.png" type="image/x-icon">
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.cloud.ctfd.io/cyberrange/themes/core/static/assets/main.e9ec7884.css">
+  
+
+  
+
+  <script  src="https://cdn.cloud.ctfd.io/cyberrange/themes/core/static/assets/color_mode_switcher.52334129.js"></script>
+
+  <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "8520d812f0a5c0752656e495a8f7436f791bdf149f8e1e4cc330717a960cc8cc",
+          'userMode': "users",
+          'userId': 103,
+          'userName': "Fasi Sika",
+          'userEmail': "whoisfasi+skool@gmail.com",
+          'userVerified': true,
+          'teamId': null,
+          'teamName': null,
+          'start': null,
+          'end': null,
+          'themeSettings': {"challenge_category_order": "function compare(a, b) {\r\n  if (a \u003c b) return -1;\r\n  if (a \u003e b) return 1;\r\n  return 0;\r\n}", "challenge_order": "function compare(a, b) {\r\n  if (a.id \u003c b.id) return -1;\r\n  if (a.id \u003e b.id) return 1;\r\n  return 0;\r\n}", "challenge_window_size": "lg", "use_builtin_code_highlighter": true},
+          'eventSounds': [
+            "/themes/core/static/sounds/notification.webm",
+            "/themes/core/static/sounds/notification.mp3",
+          ],
+      }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style id="cyber-range-theme">
+:root {
+  --theme-color: #ef4444;
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #0f0f16;
+  --bg-card: rgba(255,255,255,0.03);
+  --border: rgba(239,68,68,0.15);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255,255,255,0.5);
+  --text-muted: rgba(255,255,255,0.3);
+  --red: #ef4444;
+  --red-dim: rgba(239,68,68,0.15);
+  --font: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+body {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  font-family: var(--font) !important;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(239,68,68,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(239,68,68,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ef4444, transparent);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, span, div, a, td, th, li, ul, ol,
+label, input, textarea, select, button, pre, code, small, strong, em,
+blockquote, figcaption, nav, header, footer, section, article, aside,
+.navbar-brand, .nav-link, .btn, .form-control, .card-title, .card-text,
+.challenge-name, .challenge-desc, .table { font-family: var(--font) !important; }
+
+.navbar {
+  background: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+.navbar .nav-link {
+  color: var(--text-secondary) !important;
+  font-size: 12px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--red) !important;
+}
+
+h1, h2, h3, h4, h5, h6 { color: var(--text-primary) !important; }
+p { color: var(--text-secondary) !important; }
+hr { border-color: var(--border) !important; }
+.text-muted { color: var(--text-muted) !important; }
+.bg-dark { background: var(--bg-secondary) !important; }
+a:not([style]):not(i):not([class*="fa"]) { color: var(--red) !important; }
+a:not([style]):not(i):not([class*="fa"]):hover { color: #dc2626 !important; }
+
+.card, .jumbotron, .modal-content {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-primary) !important;
+  border-radius: 0 !important;
+}
+.jumbotron { background: var(--bg-secondary) !important; }
+
+.table { color: var(--text-primary) !important; }
+.table thead th {
+  background: rgba(239,68,68,0.1) !important;
+  border-bottom: 1px solid var(--red) !important;
+  color: var(--red) !important;
+  font-size: 10px !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+}
+.table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.05) !important; }
+.table tbody tr:hover { background: rgba(239,68,68,0.05) !important; }
+.table tbody tr:first-child td { color: var(--red) !important; font-weight: bold !important; }
+.table tbody td { border: none !important; color: var(--text-primary) !important; }
+.table-striped tbody tr:nth-of-type(odd) { background: rgba(255,255,255,0.02) !important; }
+
+.btn-primary, .btn-theme {
+  background: var(--red) !important;
+  border-color: var(--red) !important;
+  border-radius: 0 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+  color: #ffffff !important;
+}
+.btn-primary:hover, .btn-theme:hover { background: #dc2626 !important; border-color: #dc2626 !important; }
+.btn-outline-primary, .btn-outline-secondary {
+  border-color: var(--border) !important;
+  color: var(--text-secondary) !important;
+  border-radius: 0 !important;
+}
+.btn-outline-primary:hover, .btn-outline-secondary:hover {
+  background: var(--red-dim) !important;
+  border-color: var(--red) !important;
+  color: var(--red) !important;
+}
+
+.form-control, input, textarea, select {
+  background: rgba(255,255,255,0.03) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  color: var(--text-primary) !important;
+  border-radius: 0 !important;
+}
+.form-control:focus, input:focus, textarea:focus {
+  border-color: rgba(239,68,68,0.5) !important;
+  box-shadow: none !important;
+}
+.form-control::placeholder { color: rgba(255,255,255,0.2) !important; }
+label {
+  color: var(--text-muted) !important;
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+.modal-dialog .modal-content,
+.challenge-modal .modal-content,
+[class*="modal"] [class*="content"] {
+  background: #0f0f16 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(239,68,68,0.15) !important;
+}
+.modal-body, .modal-header, .modal-footer {
+  background: #0f0f16 !important;
+  color: #ffffff !important;
+}
+.modal-header { border-bottom: 1px solid var(--border) !important; }
+.modal-footer { border-top: 1px solid var(--border) !important; }
+.modal-body p, .modal-body span, .modal-body div,
+.modal-body label, .modal-body h1, .modal-body h2,
+.modal-body h3, .modal-body h4, .modal-body h5 { color: #ffffff !important; }
+.modal-body input, .modal-body textarea {
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  color: #ffffff !important;
+}
+.modal-body .btn-success, .modal-body .btn-primary {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+  color: #ffffff !important;
+}
+.modal-body .alert-success {
+  background: rgba(239,68,68,0.1) !important;
+  border-color: rgba(239,68,68,0.3) !important;
+  color: #ef4444 !important;
+}
+
+/* ── FIX: Modal solves table — kill Bootstrap white rows ── */
+.modal-body .table tbody tr,
+.modal-body .table-striped tbody tr:nth-of-type(odd),
+.modal-body .table-striped tbody tr:nth-of-type(even),
+.modal-body table tbody tr {
+  background: #0f0f16 !important;
+  color: #ffffff !important;
+}
+.modal-body .table tbody td,
+.modal-body table tbody td {
+  color: rgba(255,255,255,0.7) !important;
+  border: none !important;
+}
+.modal-body .table tbody tr:nth-of-type(odd),
+.modal-body table tbody tr:nth-of-type(odd) {
+  background: rgba(255,255,255,0.03) !important;
+}
+.modal-body .table tbody tr:hover,
+.modal-body table tbody tr:hover {
+  background: rgba(239,68,68,0.05) !important;
+}
+
+/* ── FIX: Modal submit button and all modal buttons visible ── */
+.modal-body button,
+.modal-body .btn,
+.modal-body input[type="submit"] {
+  color: #ffffff !important;
+}
+
+.challenge-name { text-transform: uppercase !important; letter-spacing: 2px !important; }
+.challenge-desc { color: var(--text-secondary) !important; }
+.challenge-button {
+  background: var(--bg-card) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  border-radius: 0 !important;
+}
+.challenge-button:hover {
+  border-color: rgba(239,68,68,0.3) !important;
+  background: rgba(239,68,68,0.05) !important;
+}
+.challenge-button .btn-dark { background: transparent !important; border: none !important; }
+.challenge-button.solved,
+.challenge-button[class*="solved"] {
+  border-color: #ef4444 !important;
+  background: rgba(239,68,68,0.08) !important;
+  opacity: 0.7 !important;
+}
+.challenge-button.solved::after,
+.challenge-button[class*="solved"]::after {
+  content: 'SOLVED';
+  display: block;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #ef4444;
+  margin-top: 4px;
+}
+
+.score, .points { color: var(--red) !important; font-weight: 700 !important; }
+
+.alert { border-radius: 0 !important; }
+.alert-success {
+  background: rgba(239,68,68,0.1) !important;
+  border-color: var(--red) !important;
+  color: var(--red) !important;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 0 !important;
+  color: rgba(255,255,255,0.5) !important;
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  border: 1px solid transparent !important;
+}
+.nav-tabs .nav-link.active {
+  background: transparent !important;
+  border-color: var(--red) !important;
+  border-bottom-color: var(--red) !important;
+  color: var(--red) !important;
+}
+
+.dropdown-menu {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 0 !important;
+}
+.dropdown-item { color: var(--text-secondary) !important; }
+.dropdown-item:hover { background: var(--red-dim) !important; color: var(--red) !important; }
+
+.page-link {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border) !important;
+  color: var(--text-secondary) !important;
+  border-radius: 0 !important;
+}
+.page-item.active .page-link { background: var(--red) !important; border-color: var(--red) !important; }
+
+.badge { border-radius: 0 !important; letter-spacing: 1px !important; }
+.badge-primary, .badge-success { background: var(--red-dim) !important; color: var(--red) !important; }
+
+.ct-label { color: var(--text-muted) !important; }
+.ct-grid { stroke: rgba(255,255,255,0.05) !important; }
+
+.main-footer, footer {
+  background: transparent !important;
+  border-top: 1px solid var(--border) !important;
+  color: var(--text-muted) !important;
+}
+.main-footer a[href*="ctfd.io"],
+footer a[href*="ctfd.io"] { display: none !important; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: rgba(239,68,68,0.3); }
+
+#score-graph { display: none !important; }
+.theme-switch { display: none !important; }
+.navbar-nav a[href="/users"] { display: none !important; }
+
+/* ── LIGHT MODE OVERRIDES ── */
+[data-bs-theme="light"] {
+  --bg-primary: #f0f0f5;
+  --bg-secondary: #ffffff;
+  --bg-card: rgba(0,0,0,0.03);
+  --border: rgba(239,68,68,0.2);
+  --text-primary: #1a1a2e;
+  --text-secondary: rgba(0,0,0,0.6);
+  --text-muted: rgba(0,0,0,0.4);
+  --red-dim: rgba(239,68,68,0.08);
+}
+[data-bs-theme="light"] body {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+[data-bs-theme="light"] body::before {
+  background-image: none !important;
+}
+[data-bs-theme="light"] .navbar {
+  background: #ffffff !important;
+  border-bottom-color: rgba(0,0,0,0.08) !important;
+}
+[data-bs-theme="light"] .navbar .nav-link {
+  color: rgba(0,0,0,0.5) !important;
+}
+[data-bs-theme="light"] h1, [data-bs-theme="light"] h2,
+[data-bs-theme="light"] h3, [data-bs-theme="light"] h4,
+[data-bs-theme="light"] h5, [data-bs-theme="light"] h6 {
+  color: #1a1a2e !important;
+}
+[data-bs-theme="light"] p {
+  color: rgba(0,0,0,0.6) !important;
+}
+[data-bs-theme="light"] .card,
+[data-bs-theme="light"] .jumbotron {
+  background: #ffffff !important;
+  border-color: rgba(0,0,0,0.08) !important;
+  color: #1a1a2e !important;
+}
+[data-bs-theme="light"] .form-control,
+[data-bs-theme="light"] input,
+[data-bs-theme="light"] textarea,
+[data-bs-theme="light"] select {
+  background: #ffffff !important;
+  border-color: rgba(0,0,0,0.15) !important;
+  color: #1a1a2e !important;
+}
+[data-bs-theme="light"] .form-control::placeholder {
+  color: rgba(0,0,0,0.3) !important;
+}
+[data-bs-theme="light"] .table {
+  color: #1a1a2e !important;
+}
+[data-bs-theme="light"] .table tbody tr {
+  border-bottom-color: rgba(0,0,0,0.05) !important;
+}
+[data-bs-theme="light"] .table tbody td {
+  color: #1a1a2e !important;
+}
+[data-bs-theme="light"] .table-striped tbody tr:nth-of-type(odd) {
+  background: rgba(0,0,0,0.02) !important;
+}
+[data-bs-theme="light"] .table tbody tr:hover {
+  background: rgba(239,68,68,0.05) !important;
+}
+[data-bs-theme="light"] .modal-dialog .modal-content,
+[data-bs-theme="light"] .modal-content,
+[data-bs-theme="light"] .modal-body,
+[data-bs-theme="light"] .modal-header,
+[data-bs-theme="light"] .modal-footer {
+  background: #ffffff !important;
+  color: #1a1a2e !important;
+}
+[data-bs-theme="light"] .modal-header {
+  border-bottom-color: rgba(0,0,0,0.08) !important;
+}
+[data-bs-theme="light"] .modal-footer {
+  border-top-color: rgba(0,0,0,0.08) !important;
+}
+[data-bs-theme="light"] .modal-body p,
+[data-bs-theme="light"] .modal-body span,
+[data-bs-theme="light"] .modal-body div,
+[data-bs-theme="light"] .modal-body label,
+[data-bs-theme="light"] .modal-body h1,
+[data-bs-theme="light"] .modal-body h2,
+[data-bs-theme="light"] .modal-body h3,
+[data-bs-theme="light"] .modal-body h4,
+[data-bs-theme="light"] .modal-body h5 {
+  color: #1a1a2e !important;
+}
+[data-bs-theme="light"] .modal-body input,
+[data-bs-theme="light"] .modal-body textarea {
+  background: #f5f5f5 !important;
+  border-color: rgba(0,0,0,0.15) !important;
+  color: #1a1a2e !important;
+}
+[data-bs-theme="light"] .modal-body .table tbody tr,
+[data-bs-theme="light"] .modal-body .table-striped tbody tr:nth-of-type(odd),
+[data-bs-theme="light"] .modal-body .table-striped tbody tr:nth-of-type(even),
+[data-bs-theme="light"] .modal-body table tbody tr {
+  background: #ffffff !important;
+  color: #1a1a2e !important;
+}
+[data-bs-theme="light"] .modal-body .table tbody tr:nth-of-type(odd),
+[data-bs-theme="light"] .modal-body table tbody tr:nth-of-type(odd) {
+  background: #f8f8fa !important;
+}
+[data-bs-theme="light"] .modal-body .table tbody td,
+[data-bs-theme="light"] .modal-body table tbody td {
+  color: rgba(0,0,0,0.7) !important;
+}
+[data-bs-theme="light"] .modal-body button,
+[data-bs-theme="light"] .modal-body .btn {
+  color: #ffffff !important;
+}
+[data-bs-theme="light"] .dropdown-menu {
+  background: #ffffff !important;
+  border-color: rgba(0,0,0,0.08) !important;
+}
+[data-bs-theme="light"] .dropdown-item {
+  color: rgba(0,0,0,0.6) !important;
+}
+[data-bs-theme="light"] .dropdown-item:hover {
+  background: rgba(239,68,68,0.05) !important;
+  color: #ef4444 !important;
+}
+[data-bs-theme="light"] .challenge-button {
+  background: rgba(0,0,0,0.02) !important;
+  border-color: rgba(0,0,0,0.08) !important;
+}
+[data-bs-theme="light"] .challenge-button:hover {
+  border-color: rgba(239,68,68,0.3) !important;
+  background: rgba(239,68,68,0.03) !important;
+}
+[data-bs-theme="light"] ::-webkit-scrollbar-track {
+  background: #f0f0f5;
+}
+[data-bs-theme="light"] ::-webkit-scrollbar-thumb {
+  background: rgba(239,68,68,0.2);
+}
+[data-bs-theme="light"] .main-footer,
+[data-bs-theme="light"] footer {
+  border-top-color: rgba(0,0,0,0.08) !important;
+}
+[data-bs-theme="light"] .nav-tabs .nav-link {
+  color: rgba(0,0,0,0.4) !important;
+}
+[data-bs-theme="light"] .text-muted {
+  color: rgba(0,0,0,0.4) !important;
+}
+[data-bs-theme="light"] .bg-dark {
+  background: #f0f0f5 !important;
+}
+
+/* ═════════════════════════════════════════════════════════════
+   A11Y READABILITY OVERRIDE  ·  temp stopgap
+   Lifts faint text, bumps base size and line-height.
+   Covers both dark and light modes. Remove on Career Platform revamp.
+   ═════════════════════════════════════════════════════════════ */
+
+/* Base sizing — both modes */
+body { font-size: 15px !important; line-height: 1.65 !important; }
+label { font-size: 12px !important; }
+.navbar .nav-link { font-size: 13px !important; }
+  
+  /* Background lift — relieve halation on pure black */
+:root { --bg-primary: #0e0e16 !important; }
+body { background: #0e0e16 !important; }
+.card, .jumbotron, .modal-content { background: #15151f !important; }
+
+/* DARK MODE: lift faint white text */
+:root {
+  --text-secondary: rgba(255,255,255,0.80) !important;
+  --text-muted: rgba(255,255,255,0.60) !important;
+}
+p, li, td, .challenge-desc {
+  color: rgba(255,255,255,0.80) !important;
+  line-height: 1.65 !important;
+}
+.modal-body p, .modal-body span, .modal-body div { line-height: 1.65 !important; }
+.modal-body .table tbody td,
+.modal-body table tbody td { color: rgba(255,255,255,0.85) !important; }
+.nav-tabs .nav-link { color: rgba(255,255,255,0.65) !important; }
+
+/* LIGHT MODE: deepen the dark-on-light too */
+[data-bs-theme="light"] {
+  --text-secondary: rgba(0,0,0,0.78) !important;
+  --text-muted: rgba(0,0,0,0.60) !important;
+}
+[data-bs-theme="light"] p,
+[data-bs-theme="light"] li,
+[data-bs-theme="light"] td {
+  color: rgba(0,0,0,0.78) !important;
+  line-height: 1.65 !important;
+}
+[data-bs-theme="light"] .navbar .nav-link { color: rgba(0,0,0,0.70) !important; }
+[data-bs-theme="light"] .nav-tabs .nav-link { color: rgba(0,0,0,0.60) !important; }
+[data-bs-theme="light"] .dropdown-item { color: rgba(0,0,0,0.78) !important; }
+[data-bs-theme="light"] .text-muted { color: rgba(0,0,0,0.60) !important; }
+[data-bs-theme="light"] .modal-body .table tbody td,
+[data-bs-theme="light"] .modal-body table tbody td { color: rgba(0,0,0,0.82) !important; }
+/* ═════════════════════════════════════════════════════════════
+   end A11Y override
+   ═════════════════════════════════════════════════════════════ */
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a href="/" class="navbar-brand">
+      
+        <img
+            class="img-responsive ctf_logo"
+            src="/files/827517489316203d3aef77ab5b68adc0/cyber-range-final.png"
+            alt="Cyber Range Threat Hunts"
+            height="25"
+        >
+      
+    </a>
+
+    <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#base-navbars"
+        aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="base-navbars">
+      <ul class="navbar-nav me-auto">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/legacy" >
+              LEGACY HUNTS
+            </a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/soc-tickets" >
+              Greenfield SOC // Tier 1
+            </a>
+          </li>
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/users">
+              Users
+            </a>
+          </li>
+
+          
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/scoreboard">
+              Scoreboard
+            </a>
+          </li>
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/challenges">
+            Challenges
+          </a>
+        </li>
+      </ul>
+
+      <hr class="d-sm-flex d-md-flex d-lg-none">
+
+      <ul class="navbar-nav ms-md-auto d-block d-sm-flex d-md-flex">
+        
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="/notifications">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notifications">
+                <i class="fas fa-bell d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                  <i class="fas fa-bell pe-1"></i>
+                  <span x-data x-show="$store.unread_count > 0" x-text="$store.unread_count" class="badge rounded-pill bg-danger badge-notification"></span>
+                  Notifications
+              </span>
+            </a>
+          </li>
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="/user">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile">
+                <i class="fas fa-user-circle d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-user-circle pe-1"></i>
+                Profile
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/settings">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Settings">
+                <i class="fas fa-cogs d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-cogs pe-1"></i>
+                Settings
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout">
+                <i class="fas fa-sign-out-alt d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-sign-out-alt pe-1"></i><span class="d-lg-none">
+                  Logout
+                </span>
+              </span>
+            </a>
+          </li>
+        
+
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-language d-none d-md-inline"></i>
+            <span class="d-sm-inline d-md-none">
+              <i class="fas fa-language pe-1"></i>
+              Change language
+            </span>
+          </button>
+          <form x-data="LanguageForm">
+            <ul class="dropdown-menu dropdown-menu-end">
+              
+              <li>
+                  <span class="dropdown-item bg-primary text-white" @click="set" value="en">
+                    English
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="de">
+                    Deutsch
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="pl">
+                    Polski
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="es">
+                    Español
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ar">
+                    اَلْعَرَبِيَّةُ
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="zh_CN">
+                    简体中文
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="zh_TW">
+                    繁體中文
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="fr">
+                    Français
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ko">
+                    한국어
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ru">
+                    русский язык
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="pt_BR">
+                    Português do Brasil
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sk">
+                    Slovenský jazyk
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ja">
+                    日本語
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="it">
+                    Italiano
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="vi">
+                    tiếng Việt
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ca">
+                    Català
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="el">
+                    Ελληνικά
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="fi">
+                    Suomi
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ro">
+                    Română
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sl">
+                    Slovenščina
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sv">
+                    Svenska
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="he">
+                    עברית
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="uz">
+                    oʻzbekcha
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sr">
+                    Српски језик
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="no">
+                    Norsk
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="hr">
+                    Hrvatski
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="cs">
+                    Čeština
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="id">
+                    Bahasa Indonesia
+                  </span>
+              </li>
+            </ul>
+          </form>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link theme-switch" type="button">
+            <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Toggle theme">
+              <i class="fas fa-sun d-none d-md-inline"></i>
+            </span>
+            <span class="d-sm-inline d-md-none">
+              <i class="fas fa-sun pe-1"></i>
+              Toggle theme
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main role="main">
+  
+  <div class="container">
+    <style>@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap");.h7 *{font-family:"JetBrains Mono","Courier New",monospace;box-sizing:border-box}.h7{max-width:1100px;margin:0 auto;padding:60px 40px 48px;color:rgba(255,255,255,0.7);font-size:15px;line-height:1.65}.h7-badge{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#ef4444;border:1px solid rgba(239,68,68,0.3);padding:5px 14px;display:inline-block;margin-bottom:24px}.h7 h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#fff;margin:0 0 6px;line-height:1.08}.h7 h1 span{color:#ef4444}.h7-sub{font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:1px;margin-bottom:40px;line-height:2;border-left:2px solid rgba(239,68,68,0.25);padding-left:16px;max-width:720px}.h7-chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 32px}.h7-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.75)}.h7-chip.crit{background:rgba(239,68,68,0.1);border-color:rgba(239,68,68,0.35);color:#ef4444}.h7-chip::before{content:'';width:5px;height:5px;background:currentColor;border-radius:50%}.h7-banner{border:1px solid rgba(239,68,68,0.25);padding:32px 36px;margin-bottom:40px;background:linear-gradient(135deg,rgba(239,68,68,0.04) 0%,rgba(239,68,68,0.01) 100%);position:relative}.h7-banner::before,.h7-banner::after{content:'';position:absolute;width:18px;height:18px;border:1px solid #ef4444}.h7-banner::before{top:-1px;left:-1px;border-right:none;border-bottom:none}.h7-banner::after{bottom:-1px;right:-1px;border-left:none;border-top:none}.h7-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.h7-meta div .lbl{font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}.h7-meta div .val{font-size:13px;color:rgba(255,255,255,0.85);font-weight:500}.h7-meta div .val.crit{color:#ef4444;font-weight:600}.h7-section{font-family:"Space Grotesk",sans-serif;font-size:16px;font-weight:700;color:#ef4444;letter-spacing:2.5px;text-transform:uppercase;margin:52px 0 24px;padding-bottom:14px;border-bottom:1px solid rgba(239,68,68,0.2);display:flex;align-items:center;justify-content:space-between}.h7-section .count{font-size:11px;color:rgba(255,255,255,0.4);font-weight:400;letter-spacing:2px}.h7-brief{border:1px solid rgba(255,255,255,0.06);padding:28px 32px;margin-bottom:24px;background:rgba(255,255,255,0.02)}.h7-brief-head{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.05)}.h7-brief-head span{color:#ef4444}.h7-from{font-size:13px;color:rgba(255,255,255,0.55);margin-bottom:6px}.h7-from strong{color:rgba(255,255,255,0.7);font-weight:600}.h7-from span{color:#ef4444}.h7-body{font-size:15px;color:rgba(255,255,255,0.8);line-height:1.75;margin-top:20px}.h7-body p{margin:0 0 14px}.h7-body strong{color:#fff}.h7-body code{background:rgba(239,68,68,0.08);color:#ef4444;padding:2px 6px;font-size:13px}.h7-sig{margin-top:24px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.05);font-size:10px;color:rgba(255,255,255,0.4);line-height:1.7}.h7-sig strong{color:#ef4444}.h7-info{background:rgba(255,255,255,0.02);border-left:2px solid rgba(239,68,68,0.3);padding:18px 22px;margin:16px 0;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.65}.h7-info strong{color:#ef4444}.h7-info code{background:rgba(239,68,68,0.08);color:#ef4444;padding:2px 6px;font-size:13px}.h7-phase{display:grid;grid-template-columns:70px 1fr;gap:18px;padding:13px 0;border-bottom:1px dashed rgba(255,255,255,0.05)}.h7-phase:last-child{border-bottom:none}.h7-phase .pn{font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px}.h7-phase .pd{font-size:13px;color:rgba(255,255,255,0.75)}.h7-foot{margin-top:60px;padding-top:24px;border-top:1px solid rgba(239,68,68,0.1);font-size:9px;color:rgba(255,255,255,0.25);letter-spacing:2px;text-align:center;line-height:1.9}.h7-foot strong{color:#ef4444;letter-spacing:3px}@media (max-width:900px){.h7{padding:40px 20px 32px}.h7-meta{grid-template-columns:repeat(2,1fr)}}</style>
+<div class="h7">
+<div class="h7-badge">Second Vector // Operation Brief</div>
+<img src="/files/1d574fe0160c2173d5cde8791846b593/hunt8.png" alt="Second Vector" style="width:100%;max-height:300px;object-fit:cover;border:1px solid rgba(239,68,68,0.25);margin:8px 0 28px;display:block;"/>
+<h1>Second <span>Vector</span></h1>
+<p class="h7-sub" style="margin-top:8px;">Hunt 08 // a quiet identity compromise turns into fraud and silent exfiltration</p>
+<div class="h7-chips">
+<span class="h7-chip crit">Active Hunt</span>
+<span class="h7-chip">Intermediate</span>
+<span class="h7-chip">Sentinel</span>
+<span class="h7-chip">38 flags // 3 stages</span>
+<span class="h7-chip">T2 // <span id="analyst-name" style="color:#ef4444;font-weight:700;">Loading...</span></span>
+</div>
+
+<div class="h7-banner">
+<div class="h7-meta">
+<div><div class="lbl">Organisation</div><div class="val crit">LOG(N) Pacific</div></div>
+<div><div class="lbl">Platform</div><div class="val">Microsoft 365 // Entra ID</div></div>
+<div><div class="lbl">Telemetry</div><div class="val">Sentinel</div></div>
+<div><div class="lbl">Investigation Window</div><div class="val">2026-06-11 03:00 UTC<br>&rarr; 2026-06-11 13:00 UTC</div></div>
+<div><div class="lbl">Profile</div><div class="val crit">Low-rated alert // no malware // no outage</div></div>
+<div><div class="lbl">Status</div><div class="val">Inherited from night shift</div></div>
+</div>
+</div>
+
+<div class="h7-section">IR Brief <span class="count">[ Read first ]</span></div>
+<div class="h7-brief">
+<div class="h7-brief-head">// HUNT ASSIGNMENT <span>// Second Vector</span></div>
+<div class="h7-from"><strong>From:</strong> IR Lead <span>// LOG(N) Pacific</span></div>
+<div class="h7-from"><strong>To:</strong> Threat Hunt <span>// On-Shift</span></div>
+<div class="h7-from"><strong>Re:</strong> Incident 87241 // anonymous sign-in on a finance user</div>
+<div class="h7-body">
+<p>Overnight, Microsoft Entra ID Protection raised an incident against a finance user. A sign-in from an anonymous IP address, flagged on <code>m.smith</code> and rated <strong>Low</strong>. The night shift triaged it, found nothing they could act on, and left it in the queue.</p>
+<p>You are picking it up. Low-severity identity alerts on finance staff are exactly where a patient operator hides. The detection caught <strong>one sign-in</strong>. It did not ask what happened next. That is your job.</p>
+<p>This one is cloud. <strong>No malware to reverse, no endpoint to image.</strong> Everything the attacker did, they did through identity, mail, files and cloud services, and every action left a trace in a different table. You will move across the sign-in logs, the mailbox audit, the Graph activity and the mail events, and tie scattered records back to one session.</p>
+<p>What we do not yet know:</p>
+<p>&nbsp;&nbsp;&nbsp;<strong>&middot;</strong> Whether the Low rating is right, or whether the machine dismissed a full compromise<br>
+&nbsp;&nbsp;&nbsp;<strong>&middot;</strong> What the operator did once inside, and what they took<br>
+&nbsp;&nbsp;&nbsp;<strong>&middot;</strong> What persisted, and whether it still acts with nobody signed in<br>
+&nbsp;&nbsp;&nbsp;<strong>&middot;</strong> Who else was drawn into the fraud, and how</p>
+<p>Start at the incident. <strong>Incident 87241</strong> is what the night shift left you, open it in Defender XDR and read it before you touch the workspace. The Evidence and Response pane names the principal and the flagged sign-in. From there, the rest is in the Sentinel workspace.</p>
+<p>Discover the schema yourself with <code>take 1</code> or <code>getschema</code>, that is part of the work. Some answers are sign-in telemetry, others live in the mailbox audit, the Graph activity and the mail tables. Pivot across them.</p>
+<p>Scope tightly. The intrusion window is <strong>11 June 2026, 03:00 to 13:00 UTC</strong>, but some recon reached back into older mail, so widen out when the evidence tells you to. Narrow per stage as you build the timeline.</p>
+<p>Work it in three stages. <strong>Triage</strong> the incident and confirm what you are looking at. <strong>Investigate</strong> the session, the recon, the fraud, the persistence and the data taken, in whatever order the evidence pulls you. Then reach a <strong>judgement</strong> the night shift could not: what really happened, how it was hidden, and what you do about it.</p>
+<p>Section 00 is a gate. The phrase to submit is in this brief: <strong>Tier-2 hunter ready</strong>. Acknowledge it, then start.</p>
+<p>Get hunting.</p>
+<div class="h7-sig">
+<strong>// IR Lead</strong><br>
+LOG(N) Pacific Incident Response
+</div>
+</div>
+</div>
+
+<div class="h7-info">
+<strong>Incident 87241.</strong> This is the alert the night shift left in your queue. Open it in Defender XDR and read it first, the Evidence and Response pane names the principal and the flagged sign-in.<br><br>
+<a href="https://security.microsoft.com/incident2/87241/overview?tid=939e93f3-04f6-479d-82ff-345c231abb4d" target="_blank" rel="noopener" style="color:#ef4444 !important;text-decoration:none !important;font-weight:600 !important;letter-spacing:2px !important;text-transform:uppercase !important;font-size:11px !important;">&rarr; Open incident 87241 in Defender XDR</a>
+</div>
+
+<div class="h7-section">Hunt Stages <span class="count">[ gate + 3 stages ]</span></div>
+<div class="h7-brief" style="padding:22px 32px;">
+<div class="h7-phase"><div class="pn">00</div><div class="pd"><strong style="color:#fff;">Incident Handoff</strong> &mdash; gate. Acknowledge readiness with the phrase from this brief.</div></div>
+<div class="h7-phase"><div class="pn">01</div><div class="pd"><strong style="color:#fff;">Triage</strong> &mdash; work the ticket. Confirm the principal, the source, the device, and audit the machine's verdict.</div></div>
+<div class="h7-phase"><div class="pn">02</div><div class="pd"><strong style="color:#fff;">Investigation</strong> &mdash; scope the session, catch the recon, reconstruct the fraud, hunt the persistence, scope the data theft. Pull the threads in any order.</div></div>
+<div class="h7-phase"><div class="pn">03</div><div class="pd"><strong style="color:#fff;">Judgement</strong> &mdash; disprove the innocent story, find what acted with nobody online, attribute it to one actor, and order the response.</div></div>
+</div>
+
+<div class="h7-info">
+<strong>Note on the quiet.</strong> Nothing here screamed. The value is in spotting deliberate intent inside activity that reads as routine. The obvious table is not always where the answer lives. Aggregate, correlate, and when a trail goes cold, pivot rather than close.
+</div>
+
+<div style="margin:60px 0 24px;text-align:center;padding:40px 0 0;border-top:1px solid rgba(239,68,68,0.12);">
+<div style="font-size:10px;letter-spacing:5px;color:rgba(255,255,255,0.3);text-transform:uppercase;margin-bottom:22px;font-weight:600;">// Ready to begin</div>
+<a href="/challenges" style="display:inline-block;padding:20px 64px;font-family:JetBrains Mono,monospace !important;font-size:14px !important;letter-spacing:5px !important;text-transform:uppercase !important;font-weight:700 !important;text-decoration:none !important;background:#ef4444 !important;color:#ffffff !important;border:none !important;">BEGIN INVESTIGATION</a>
+<div style="font-size:11px;color:rgba(255,255,255,0.35);margin-top:20px;letter-spacing:1px;line-height:1.7;">
+Start at the incident, then move to the Sentinel workspace for the telemetry.<br><br>
+<a href="https://security.microsoft.com/incident2/87241/overview?tid=939e93f3-04f6-479d-82ff-345c231abb4d" target="_blank" rel="noopener" style="color:#ef4444 !important;text-decoration:none !important;font-weight:600 !important;letter-spacing:2px !important;text-transform:uppercase !important;font-size:11px !important;">&rarr; Open incident 87241 in Defender XDR</a><br><br>
+<a href="https://portal.azure.com/#view/Microsoft_Azure_Security_Insights/MainMenuBlade/~/3/id/%2Fsubscriptions%2F3c95e63a-895a-4386-991e-edbbf57de5c8%2Fresourcegroups%2Fcyber-range-admin-soc%2Fproviders%2Fmicrosoft.securityinsightsarg%2Fsentinel%2Flaw-cyber-range" target="_blank" rel="noopener" style="color:#ef4444 !important;text-decoration:none !important;font-weight:600 !important;letter-spacing:2px !important;text-transform:uppercase !important;font-size:11px !important;">&rarr; Open the Sentinel workspace</a>
+</div>
+</div>
+
+<div class="h7-foot">
+<strong>// SECOND VECTOR //</strong><br>
+Hunt 08 // M365 Compromise &amp; BEC<br>
+<span style="opacity:0.6;">Investigation window 11 June 2026, 03:00 to 13:00 UTC</span>
+</div>
+</div>
+<script>fetch('/api/v1/users/me', { credentials: 'same-origin', headers: { 'Content-Type': 'application/json' } }) .then(function(r) { return r.json(); }) .then(function(d) { var el = document.getElementById('analyst-name'); if (el && d.data && d.data.name) { el.textContent = d.data.name; } else if (el) { el.textContent = 'Analyst'; } }) .catch(function() { var el = document.getElementById('analyst-name'); if (el) el.textContent = 'Analyst'; });</script>
+  </div>
+
+</main>
+
+
+<div 
+    id="ctfdio-snackbar-email-nudge"
+    x-data 
+    x-show="window.init.userId && !window.init.userVerified && localStorage.getItem('remind_email_verify') != window.init.userId && (!['/team', '/teams/join', '/teams/new'].includes(window.location.pathname) || window.init.teamId != null)"
+    class="alert alert-info alert-dismissible col-md-4 col-10 position-fixed text-center m-0 ctfdio-email-nudge" 
+    style="bottom: 45px; left: 50%; transform: translateX(-50%); z-index: 1040; display: none;" 
+    role="alert"
+>
+  <small>
+    <strong>Email Unconfirmed</strong><br>
+    <span>To confirm your email address please <a href="/confirm?flow=init">click here</a>.</span>
+  </small>
+  <button type="button" class="btn-close" @click="localStorage.setItem('remind_email_verify', window.init.userId); $el.parentElement.style.display = 'none';" aria-label="Close"></button>
+</div>
+
+
+<footer class="footer">
+  <div class="container text-center">
+    <a href="https://ctfd.io" class="text-secondary">
+      <small class="text-muted">
+        Powered by CTFd
+      </small>
+    </a>
+  </div>
+</footer>
+
+<div x-data>
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div x-ref="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header">
+        <strong class="me-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" x-html="$store.toast.html">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data>
+  <div class="modal fade" x-ref="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" x-text="$store.modal.title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script type="module"  src="https://cdn.cloud.ctfd.io/cyberrange/themes/core/static/assets/index.94b01c79.js"></script><script type="module"  src="https://cdn.cloud.ctfd.io/cyberrange/themes/core/static/assets/page.9d188b19.js"></script>
+
+
+<script defer src="https://cdn.cloud.ctfd.io/cyberrange/static/recaptcha.js?t=afa8826a"></script>
+<script defer src="https://www.google.com/recaptcha/api.js"></script>
+
+<style>
+.navbar-brand {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 4px !important;
+  text-transform: uppercase !important;
+}
+footer a[href*="ctfd.io"] { display: none !important; }
+footer small { display: none !important; }
+
+/* Hide native CTFd scoreboard empty text */
+.jumbotron h3, h3.scoreboard-empty,
+.col-md-12 > h3[class=""], .col-md-12 > h3:not([class]) {
+  display: none !important;
+}
+
+/* Hunt Filter Bar */
+#hunt-filter-bar {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+  margin: 0 auto 1.5rem;
+  max-width: 900px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+#hunt-filter-bar .hunt-btn {
+  padding: 10px 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  border-right: 1px solid rgba(255,255,255,0.06);
+  transition: color 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+}
+#hunt-filter-bar .hunt-btn:last-child { border-right: none; }
+#hunt-filter-bar .hunt-btn:hover {
+  color: rgba(255,255,255,0.7);
+  background: rgba(239,68,68,0.05);
+}
+#hunt-filter-bar .hunt-btn.active {
+  color: #ef4444;
+  background: rgba(239,68,68,0.1);
+  border-bottom: 2px solid #ef4444;
+}
+#hunt-filter-bar .hunt-btn.live-btn::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #ef4444;
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: hunt-pulse 2s infinite;
+}
+@keyframes hunt-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Modal overlay */
+#hunt-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 10000;
+  overflow-y: auto;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+#hunt-modal-overlay.open { opacity: 1; visibility: visible; }
+
+#hunt-modal {
+  width: 100%;
+  max-width: 960px;
+  background: #0d0d14;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 28px 32px;
+  transform: translateY(12px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+#hunt-modal-overlay.open #hunt-modal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#hunt-modal .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+#hunt-modal .modal-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+#hunt-modal .modal-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 1px;
+  margin-left: 12px;
+}
+#hunt-modal .modal-close {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  color: rgba(255,255,255,0.3);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0 6px;
+  line-height: 1;
+}
+#hunt-modal .modal-close:hover { color: #ef4444; }
+
+/* Difficulty filter pills */
+#hunt-modal .diff-filters {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+#hunt-modal .diff-pill {
+  padding: 5px 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#hunt-modal .diff-pill:hover {
+  color: rgba(255,255,255,0.6);
+  border-color: rgba(255,255,255,0.15);
+}
+#hunt-modal .diff-pill.active {
+  color: #ef4444;
+  background: rgba(239,68,68,0.1);
+  border-color: rgba(239,68,68,0.3);
+}
+
+/* Hunt cards grid */
+#hunt-modal .hunt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 700px) {
+  #hunt-modal .hunt-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  #hunt-modal .hunt-grid { grid-template-columns: 1fr; }
+}
+#hunt-modal .hunt-card {
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  background: rgba(255,255,255,0.015);
+}
+#hunt-modal .hunt-card:hover {
+  border-color: rgba(239,68,68,0.3);
+  background: rgba(239,68,68,0.03);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(239,68,68,0.08);
+}
+#hunt-modal .card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+#hunt-modal .diff-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 2px 6px;
+}
+#hunt-modal .diff-badge.easy {
+  color: #5DCAA5; background: rgba(93,202,165,0.12); border: 1px solid rgba(93,202,165,0.25);
+}
+#hunt-modal .diff-badge.intermediate {
+  color: #ef9f27; background: rgba(239,159,39,0.12); border: 1px solid rgba(239,159,39,0.25);
+}
+#hunt-modal .diff-badge.advanced {
+  color: #ef4444; background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.25);
+}
+#hunt-modal .flag-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 1px;
+}
+#hunt-modal .card-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+#hunt-modal .card-subtitle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 8px;
+}
+#hunt-modal .theme-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  color: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.04);
+  padding: 2px 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#hunt-modal .modal-footer {
+  text-align: center;
+  margin-top: 18px;
+}
+#hunt-modal .show-all-btn {
+  padding: 8px 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#hunt-modal .show-all-btn:hover {
+  color: rgba(255,255,255,0.5);
+  border-color: rgba(255,255,255,0.2);
+  transform: translateY(-1px);
+}
+
+/* Category badges */
+.hunt-badge-live {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: #ef4444; background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.3);
+  padding: 2px 8px; margin-right: 12px; vertical-align: middle;
+}
+.hunt-badge-live::before {
+  content: ''; display: inline-block; width: 5px; height: 5px;
+  background: #ef4444; border-radius: 50%; margin-right: 6px;
+  vertical-align: middle; animation: hunt-pulse 2s infinite;
+}
+.hunt-badge-practice {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(255,255,255,0.25); background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 2px 8px; margin-right: 12px; vertical-align: middle;
+}
+.hunt-category-live { border-left: 2px solid #ef4444 !important; padding-left: 16px !important; }
+.hunt-category-practice { border-left: 2px solid rgba(255,255,255,0.06) !important; padding-left: 16px !important; }
+
+/* Hide practice categories by default - JS shows them when practice filter active */
+div.pt-5:has(.hunt-badge-practice) { display: none; }
+div.pt-5:has([class*="PRACTICE"]) { display: none; }
+
+/* ═════════════════════════════════════════════════════════════
+   A11Y READABILITY OVERRIDE  ·  temp stopgap
+   Lifts faint text + tiny fonts on footer-driven custom UI.
+   Uses !important to override JS-set inline styles where needed.
+   Remove on Career Platform revamp.
+   ═════════════════════════════════════════════════════════════ */
+
+/* ── HUNT FILTER BAR (top of /challenges) ── */
+#hunt-filter-bar .hunt-btn {
+  color: rgba(255,255,255,0.65) !important;
+  font-size: 11px !important;
+}
+#hunt-filter-bar .hunt-btn:hover { color: rgba(255,255,255,0.9) !important; }
+
+/* ── HUNT MODAL ── */
+#hunt-modal .modal-title { color: rgba(255,255,255,0.7) !important; font-size: 13px !important; }
+#hunt-modal .modal-count { color: rgba(255,255,255,0.5) !important; font-size: 11px !important; }
+#hunt-modal .modal-close { color: rgba(255,255,255,0.6) !important; }
+
+#hunt-modal .diff-pill {
+  color: rgba(255,255,255,0.6) !important;
+  font-size: 10px !important;
+}
+#hunt-modal .diff-pill:hover { color: rgba(255,255,255,0.85) !important; }
+
+#hunt-modal .flag-count { color: rgba(255,255,255,0.55) !important; font-size: 9px !important; }
+#hunt-modal .diff-badge { font-size: 9px !important; }
+#hunt-modal .card-name { font-size: 13px !important; }
+#hunt-modal .card-subtitle { color: rgba(255,255,255,0.65) !important; font-size: 11px !important; }
+#hunt-modal .theme-tag { color: rgba(255,255,255,0.55) !important; font-size: 9px !important; }
+#hunt-modal .show-all-btn {
+  color: rgba(255,255,255,0.6) !important;
+  font-size: 10px !important;
+}
+#hunt-modal .show-all-btn:hover { color: rgba(255,255,255,0.85) !important; }
+
+/* ── CATEGORY BADGES ── */
+.hunt-badge-practice { color: rgba(255,255,255,0.55) !important; font-size: 10px !important; }
+.hunt-badge-live { font-size: 10px !important; }
+
+/* ── FOOTER BRANDING ── */
+footer span { font-size: 11px !important; }
+footer span[style*="rgba(255,255,255,0.5)"] { color: rgba(255,255,255,0.75) !important; }
+footer span[style*="rgba(239,68,68,0.3)"] { color: rgba(239,68,68,0.65) !important; }
+
+/* ── SCOREBOARD: JS-built inline styles, override with !important ── */
+
+/* Subtitle under hunt name */
+.container > h1 > div[style*="rgba(255,255,255,0.4)"],
+.container > h2 > div[style*="rgba(255,255,255,0.4)"] {
+  color: rgba(255,255,255,0.7) !important;
+  font-size: 0.95rem !important;
+}
+
+/* "CLOSES IN" timer */
+h1 > div[style*="font-family"][style*="rgba(255,255,255,0.25)"],
+h2 > div[style*="font-family"][style*="rgba(255,255,255,0.25)"] {
+  color: rgba(255,255,255,0.6) !important;
+  font-size: 12px !important;
+}
+
+/* Podium time stamps */
+[id="scoreboard-graph"] ~ *,
+.container td[style*="rgba(255,255,255,0.2)"],
+.container div[style*="rgba(255,255,255,0.2)"][style*="0.5rem"] {
+  color: rgba(255,255,255,0.5) !important;
+  font-size: 0.7rem !important;
+}
+
+/* Scoreboard table header */
+.container th[style*="rgba(255,255,255,0.4)"] {
+  color: rgba(255,255,255,0.7) !important;
+  font-size: 0.8rem !important;
+}
+.container th[style*="rgba(255,255,255,0.25)"] {
+  color: rgba(255,255,255,0.6) !important;
+}
+
+/* Scoreboard table rank column */
+.container td[style*="rgba(255,255,255,0.4)"] {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+/* Stats bar labels (HUNTERS / FLAGS / MAX POINTS) */
+.container div[style*="rgba(255,255,255,0.35)"] {
+  color: rgba(255,255,255,0.65) !important;
+  font-size: 0.7rem !important;
+}
+
+/* "BETWEEN INVESTIGATIONS" / "INVESTIGATION JUST STARTED" empty-state */
+.container div[style*="rgba(255,255,255,0.2)"][style*="JetBrains"] {
+  color: rgba(255,255,255,0.55) !important;
+  font-size: 13px !important;
+}
+.container div[style*="rgba(255,255,255,0.1)"][style*="JetBrains"] {
+  color: rgba(255,255,255,0.45) !important;
+  font-size: 12px !important;
+}
+
+/* "FIRST BLOOD" badge */
+.container span[style*="rgba(220,38,38,0.4)"] {
+  font-size: 0.65rem !important;
+}
+
+/* Bottom of stack: leave reds alone, leave layout alone. */
+/* ═════════════════════════════════════════════════════════════
+   end A11Y override
+   ═════════════════════════════════════════════════════════════ */
+
+</style>
+
+<script>
+(function () {
+
+  // ── DEFAULT DARK MODE (respects toggle choice) ──
+  // Force dark mode always
+    document.documentElement.setAttribute("data-bs-theme", "dark");
+    localStorage.setItem("theme", "dark");
+
+  function fetchHuntData(callback) {
+    fetch("/hunt-data", { credentials: "same-origin" })
+      .then(function (r) { return r.text(); })
+      .then(function (html) {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, "text/html");
+        var el = doc.getElementById("sanclogic-data");
+        if (el) {
+          try { callback(JSON.parse(el.textContent)); } catch (e) { callback({ hunts: {}, history: [] }); }
+        } else { callback({ hunts: {}, history: [] }); }
+      })
+      .catch(function () { callback({ hunts: {}, history: [] }); });
+  }
+
+  function fetchAllChallenges() {
+    var allChallenges = [];
+    function fetchPage(pg) {
+      return fetch("/api/v1/challenges?page=" + pg, { credentials: "same-origin", headers: { "Content-Type": "application/json" } })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data.success && data.data) allChallenges = allChallenges.concat(data.data);
+          var pages = (data.meta && data.meta.pagination) ? data.meta.pagination.pages : 1;
+          if (pg < pages) return fetchPage(pg + 1);
+          return { success: true, data: allChallenges };
+        });
+    }
+    return fetchPage(1);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    fetchHuntData(function (huntData) {
+      var huntConfig = huntData.hunts || {};
+      var liveHuntNum = null, liveHuntName = "", liveHuntSubtitle = "";
+      var practiceHunts = [];
+
+      Object.keys(huntConfig).sort().forEach(function (num) {
+        var h = huntConfig[num];
+        if (h.status === "live") {
+          liveHuntNum = num;
+          liveHuntName = h.name || "";
+          liveHuntSubtitle = h.subtitle || "";
+        } else if (h.status === "practice") {
+          practiceHunts.push({
+            num: num, name: h.name || "Hunt " + num, subtitle: h.subtitle || "",
+            difficulty: (h.difficulty || "intermediate").toLowerCase(),
+            flags: h.flags || 0, theme: h.theme || "", brief: h.brief || ""
+          });
+        }
+      });
+
+      if (!liveHuntName) { liveHuntName = "CYBER RANGE"; liveHuntSubtitle = "Threat Hunt Platform"; }
+
+      // ── FOOTER ──
+      var footer = document.querySelector("footer");
+      if (footer) {
+        footer.innerHTML = '<div style="text-align:center;padding:16px 40px;font-family:\'JetBrains Mono\',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;"><span style="color:rgba(255,255,255,0.5);">CYBER RANGE</span><span style="color:rgba(239,68,68,0.5);margin:0 12px;">//</span><span style="color:rgba(239,68,68,0.3);">0x48554E54</span></div>';
+      }
+
+      // ── ALL TIME NAV ──
+      var navList = document.querySelector(".navbar-nav");
+      if (navList && !navList.querySelector('a[href="/alltime"]')) {
+        var li = document.createElement("li");
+        li.className = "nav-item";
+        var a = document.createElement("a");
+        a.className = "nav-link";
+        a.href = "/alltime";
+        a.textContent = "All Time";
+        li.appendChild(a);
+        var sb = navList.querySelector('a[href="/scoreboard"]');
+        if (sb && sb.parentElement) sb.parentElement.after(li);
+        else navList.appendChild(li);
+      }
+
+      // ── CHALLENGES PAGE ──
+      if (window.location.pathname === "/challenges") {
+        var h = document.querySelector("h1") || document.querySelector(".text-center h2");
+        var huntLine, subLine;
+        if (h) {
+          h.innerHTML = "";
+          var mainTitle = document.createElement("span");
+          mainTitle.textContent = "ACTIVE INVESTIGATIONS";
+          mainTitle.style.cssText = "font-size:1.8rem;font-weight:700;letter-spacing:2px;display:block;margin-bottom:10px;";
+          h.appendChild(mainTitle);
+          huntLine = document.createElement("span");
+          huntLine.id = "hunt-title-name";
+          huntLine.textContent = liveHuntName;
+          huntLine.style.cssText = "font-size:0.9rem;font-weight:600;color:#dc2626;letter-spacing:1.5px;display:block;margin-bottom:4px;";
+          h.appendChild(huntLine);
+          subLine = document.createElement("span");
+          subLine.id = "hunt-title-subtitle";
+          subLine.textContent = liveHuntSubtitle;
+          subLine.style.cssText = "font-size:0.8rem;font-weight:400;opacity:0.5;letter-spacing:0.5px;display:block;";
+          h.appendChild(subLine);
+        }
+
+        // ── BUILD MODAL (immediately, before challenges load) ──
+        var overlay = document.createElement("div");
+        overlay.id = "hunt-modal-overlay";
+
+        var modal = document.createElement("div");
+        modal.id = "hunt-modal";
+
+        // Header
+        var mHeader = document.createElement("div");
+        mHeader.className = "modal-header";
+        var titleWrap = document.createElement("div");
+        var mTitle = document.createElement("span");
+        mTitle.className = "modal-title";
+        mTitle.textContent = "SELECT INVESTIGATION";
+        titleWrap.appendChild(mTitle);
+        var mCount = document.createElement("span");
+        mCount.className = "modal-count";
+        mCount.textContent = practiceHunts.length + " AVAILABLE";
+        titleWrap.appendChild(mCount);
+        mHeader.appendChild(titleWrap);
+        var mClose = document.createElement("button");
+        mClose.className = "modal-close";
+        mClose.innerHTML = "&#10005;";
+        mClose.addEventListener("click", function () { overlay.classList.remove("open"); });
+        mHeader.appendChild(mClose);
+        modal.appendChild(mHeader);
+
+        // Difficulty filters
+        var diffFilters = document.createElement("div");
+        diffFilters.className = "diff-filters";
+        var activeDiff = "all";
+        ["all", "easy", "intermediate", "advanced"].forEach(function (d) {
+          var pill = document.createElement("button");
+          pill.className = "diff-pill" + (d === "all" ? " active" : "");
+          pill.textContent = d.toUpperCase();
+          pill.addEventListener("click", function () {
+            activeDiff = d;
+            diffFilters.querySelectorAll(".diff-pill").forEach(function (p) { p.classList.remove("active"); });
+            pill.classList.add("active");
+            grid.querySelectorAll(".hunt-card").forEach(function (c) {
+              c.style.display = (d === "all" || c.getAttribute("data-difficulty") === d) ? "" : "none";
+            });
+          });
+          diffFilters.appendChild(pill);
+        });
+        modal.appendChild(diffFilters);
+
+        // Cards grid
+        var grid = document.createElement("div");
+        grid.className = "hunt-grid";
+
+        practiceHunts.forEach(function (ph) {
+          var card = document.createElement("div");
+          card.className = "hunt-card";
+          card.setAttribute("data-difficulty", ph.difficulty);
+          card.setAttribute("data-hunt-num", ph.num);
+
+          var meta = document.createElement("div");
+          meta.className = "card-meta";
+          var badge = document.createElement("span");
+          badge.className = "diff-badge " + ph.difficulty;
+          badge.textContent = ph.difficulty.toUpperCase();
+          meta.appendChild(badge);
+          if (ph.flags) {
+            var fc = document.createElement("span");
+            fc.className = "flag-count";
+            fc.textContent = ph.flags + " FLAGS";
+            meta.appendChild(fc);
+          }
+          card.appendChild(meta);
+
+          var nm = document.createElement("div");
+          nm.className = "card-name";
+          nm.textContent = ph.name;
+          card.appendChild(nm);
+
+          var st = document.createElement("div");
+          st.className = "card-subtitle";
+          st.textContent = ph.subtitle;
+          card.appendChild(st);
+
+          if (ph.theme) {
+            var tag = document.createElement("span");
+            tag.className = "theme-tag";
+            tag.textContent = ph.theme;
+            card.appendChild(tag);
+          }
+
+          card.addEventListener("click", function () {
+            overlay.classList.remove("open");
+            sessionStorage.setItem("huntFilter", ph.num);
+            applyFilter(ph.num, "practice");
+          });
+
+          grid.appendChild(card);
+        });
+        modal.appendChild(grid);
+
+        // Show All button
+        var mFooter = document.createElement("div");
+        mFooter.className = "modal-footer";
+        var showAll = document.createElement("button");
+        showAll.className = "show-all-btn";
+        showAll.textContent = "SHOW ALL HUNTS";
+        showAll.addEventListener("click", function () {
+          overlay.classList.remove("open");
+          sessionStorage.setItem("huntFilter", "all");
+          applyFilter("all", "all");
+        });
+        mFooter.appendChild(showAll);
+        modal.appendChild(mFooter);
+
+        overlay.appendChild(modal);
+        document.body.appendChild(overlay);
+
+        // Close on overlay click (not modal)
+        overlay.addEventListener("click", function (e) {
+          if (e.target === overlay) overlay.classList.remove("open");
+        });
+
+        // Close on Escape
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") overlay.classList.remove("open");
+        });
+
+        // ── WAIT FOR CHALLENGES TO LOAD ──
+        var filterInterval = setInterval(function () {
+          var board = document.querySelector('div[x-show="loaded"]');
+          if (!board) return;
+          var cats = board.querySelectorAll("div.pt-5");
+          if (cats.length === 0) return;
+          clearInterval(filterInterval);
+
+          fetchAllChallenges()
+            .then(function (data) {
+              if (!data.success) return;
+
+              var hunts = {};
+              data.data.forEach(function (ch) {
+                var match = ch.category.match(/(?:\[(LIVE|PRACTICE)\]\s*)?Hunt\s+(\d+)\s*\/\//i);
+                if (match) {
+                  var status = (match[1] || "").toUpperCase();
+                  var num = match[2].padStart(2, "0");
+                  if (!hunts[num]) hunts[num] = { num: match[2], status: status };
+                  if (status === "LIVE") hunts[num].status = "LIVE";
+                }
+              });
+
+              var catWrappers = board.querySelectorAll("div.pt-5");
+
+              // Style headers
+              board.querySelectorAll("div.pt-5").forEach(function (wrapper) {
+                var header = wrapper.querySelector(".category-header");
+                if (!header) return;
+                var text = header.textContent.trim();
+                var isLive = text.indexOf("[LIVE]") !== -1;
+                var isPractice = text.indexOf("[PRACTICE]") !== -1;
+                var cleanText = text.replace(/\[(LIVE|PRACTICE)\]\s*/i, "");
+
+                if (isLive) wrapper.classList.add("hunt-category-live");
+                else if (isPractice) wrapper.classList.add("hunt-category-practice");
+
+                header.innerHTML = "";
+                if (isLive) {
+                  var b = document.createElement("span");
+                  b.className = "hunt-badge-live";
+                  b.textContent = "LIVE";
+                  header.appendChild(b);
+                } else if (isPractice) {
+                  var b = document.createElement("span");
+                  b.className = "hunt-badge-practice";
+                  b.textContent = "PRACTICE";
+                  header.appendChild(b);
+                }
+                header.appendChild(document.createTextNode(cleanText));
+              });
+
+              // Build filter bar
+              var bar = document.createElement("div");
+              bar.id = "hunt-filter-bar";
+
+              var liveBtn = null;
+              if (liveHuntNum) {
+                liveBtn = document.createElement("button");
+                liveBtn.className = "hunt-btn live-btn";
+                liveBtn.textContent = liveHuntName;
+                bar.appendChild(liveBtn);
+              }
+
+              var practiceBtn = document.createElement("button");
+              practiceBtn.className = "hunt-btn";
+              practiceBtn.innerHTML = "PRACTICE &#9662;";
+              bar.appendChild(practiceBtn);
+
+              board.parentElement.insertBefore(bar, board);
+
+              // Apply filter function
+              function applyFilter(huntNum, source) {
+                if (liveBtn) liveBtn.classList.remove("active");
+                practiceBtn.classList.remove("active");
+
+                if (source === "live" && liveBtn) liveBtn.classList.add("active");
+                else if (source === "practice") practiceBtn.classList.add("active");
+
+                board.querySelectorAll("div.pt-5").forEach(function (wrapper) {
+                  var header = wrapper.querySelector(".category-header");
+                  if (!header) { wrapper.style.display = ""; return; }
+                  var text = header.textContent.trim();
+                  if (huntNum === "all") { wrapper.style.display = ""; }
+                  else {
+                    var numMatch = text.match(/Hunt\s+(\d+)\s*\/\//i);
+                    wrapper.style.display = (numMatch && numMatch[1] === huntNum) ? "" : "none";
+                  }
+                });
+
+                // Update title
+                if (huntLine && subLine) {
+                  if (huntNum === "all") {
+                    huntLine.textContent = liveHuntName;
+                    subLine.textContent = liveHuntSubtitle;
+                  } else {
+                    var padded = huntNum.padStart(2, "0");
+                    var cfg = huntConfig[padded] || huntConfig[huntNum];
+                    if (cfg) { huntLine.textContent = cfg.name; subLine.textContent = cfg.subtitle; }
+                    else { huntLine.textContent = "HUNT " + padded; subLine.textContent = ""; }
+                  }
+                }
+
+                window.scrollTo(0, 0);
+              }
+
+              // Make applyFilter available to modal card clicks
+              window._huntApplyFilter = applyFilter;
+
+              // Rebind card clicks now that applyFilter exists
+              grid.querySelectorAll(".hunt-card").forEach(function (card) {
+                var num = card.getAttribute("data-hunt-num");
+                card.onclick = function () {
+                  overlay.classList.remove("open");
+                  sessionStorage.setItem("huntFilter", num);
+                  applyFilter(num, "practice");
+                };
+              });
+
+              showAll.onclick = function () {
+                overlay.classList.remove("open");
+                sessionStorage.setItem("huntFilter", "all");
+                applyFilter("all", "all");
+              };
+
+              // Event handlers
+              if (liveBtn) {
+                liveBtn.addEventListener("click", function () {
+                  overlay.classList.remove("open");
+                  sessionStorage.setItem("huntFilter", liveHuntNum);
+                  applyFilter(liveHuntNum, "live");
+                });
+              }
+
+              practiceBtn.addEventListener("click", function () {
+                overlay.classList.toggle("open");
+              });
+
+              // Default view
+              var saved = sessionStorage.getItem("huntFilter");
+              if (saved && saved !== "all" && hunts[saved.padStart(2, "0")]) {
+                var padded = saved.padStart(2, "0");
+                var src = (huntConfig[padded] && huntConfig[padded].status === "live") ? "live" : "practice";
+                applyFilter(saved, src);
+              } else if (liveHuntNum) {
+                applyFilter(liveHuntNum, "live");
+              } else if (practiceHunts.length > 0) {
+                applyFilter(practiceHunts[0].num, "practice");
+              } else {
+                applyFilter("all", "all");
+              }
+            })
+            .catch(function (err) { console.error("Hunt filter failed:", err); });
+        }, 300);
+        setTimeout(function () { clearInterval(filterInterval); }, 10000);
+
+
+        // Smart refresh: only reload if new challenges unlocked after solve
+        var knownCount = 0; fetch("/api/v1/challenges",{credentials:"same-origin"}).then(function(r){return r.json()}).then(function(d){knownCount=d.data?d.data.length:0;});
+        document.addEventListener("hidden.bs.modal", function () {
+          fetch("/api/v1/challenges", {credentials: "same-origin"})
+            .then(function (r) { return r.json(); })
+            .then(function (d) {
+              if (d.data && d.data.length > knownCount) {
+                knownCount = d.data.length;
+                document.body.style.transition = "opacity 0.3s ease";
+                document.body.style.opacity = "0";
+                setTimeout(function () { window.location.reload(); }, 400);
+              }
+            });
+        });
+
+        // Re-style new category headers that appear
+        setInterval(function () {
+          var b = document.querySelector("div[x-show=\"loaded\"]");
+          if (!b) return;
+          b.querySelectorAll("div.pt-5").forEach(function (w) {
+            var h = w.querySelector(".category-header");
+            if (!h || h.dataset.styled) return;
+            h.dataset.styled = "1";
+            var t = h.textContent.trim();
+            var isLive = t.indexOf("[LIVE]") !== -1;
+            var isPractice = t.indexOf("[PRACTICE]") !== -1;
+            var clean = t.replace(/\[(LIVE|PRACTICE)\]\s*/i, "");
+            if (isLive) w.classList.add("hunt-category-live");
+            else if (isPractice) w.classList.add("hunt-category-practice");
+            h.innerHTML = "";
+            if (isLive) {
+              var badge = document.createElement("span");
+              badge.className = "hunt-badge-live";
+              badge.textContent = "LIVE";
+              h.appendChild(badge);
+            } else if (isPractice) {
+              var badge = document.createElement("span");
+              badge.className = "hunt-badge-practice";
+              badge.textContent = "PRACTICE";
+              h.appendChild(badge);
+            }
+            h.appendChild(document.createTextNode(clean));
+            // Hide practice if live filter active
+            var saved = sessionStorage.getItem("huntFilter");
+            if (saved && saved !== "all" && isPractice) w.style.display = "none";
+          });
+        }, 500);
+      }
+
+      // ── USER PROFILE: AUTO-REVEAL SUBMISSIONS (v13) ──
+      // Submissions tab on /user hides past attempts behind a "Reveal" button.
+      // Force them visible by default and hide the now-redundant buttons.
+      if (/^\/user(?:\/|$)|^\/users\/\d+/.test(window.location.pathname)) {
+
+        var revealStyle = document.createElement("style");
+        revealStyle.textContent = [
+          /* Force-show all hidden submission content (Bootstrap collapse pattern) */
+          '.collapse { display: block !important; }',
+          /* Hide the reveal toggle buttons (no longer needed) */
+          '[data-toggle="collapse"], [data-bs-toggle="collapse"],',
+          'button.btn-link[aria-expanded], a.btn-link[aria-expanded] {',
+          '  display: none !important;',
+          '}',
+          /* Style submission text consistently */
+          '.collapse code, .collapse pre {',
+          '  background: rgba(239,68,68,0.05) !important;',
+          '  color: #ef4444 !important;',
+          '  padding: 2px 6px !important;',
+          '  font-family: "JetBrains Mono", monospace !important;',
+          '  font-size: 11px !important;',
+          '}'
+        ].join("\n");
+        document.head.appendChild(revealStyle);
+
+        // Fallback: also click any text-based "reveal" links (non-Bootstrap patterns)
+        function fallbackReveal() {
+          document.querySelectorAll("button, a").forEach(function (el) {
+            if (/^\s*(reveal|show|expand)\s*$/i.test(el.textContent)) {
+              try { el.click(); } catch (e) { /* ignore */ }
+              el.style.display = "none";
+            }
+          });
+        }
+        fallbackReveal();
+        var passes = 0;
+        var revealInt = setInterval(function () {
+          fallbackReveal();
+          if (++passes > 20) clearInterval(revealInt);
+        }, 500);
+      }
+
+      // ── SCOREBOARD ──
+      if (window.location.pathname === "/scoreboard") {
+        var heading = document.querySelector("h1") || document.querySelector(".text-center h2");
+
+        // No live hunt = show clean message, not stale scores
+        if (!liveHuntNum) {
+          if (heading) {
+            heading.innerHTML = "";
+            var noHunt = document.createElement("div");
+            noHunt.style.cssText = "text-align:center;padding:4rem 2rem;";
+            var nhTitle = document.createElement("div");
+            nhTitle.textContent = "BETWEEN INVESTIGATIONS";
+            nhTitle.style.cssText = "font-family:\x27JetBrains Mono\x27,monospace;font-size:14px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,0.2);margin-bottom:12px;";
+            noHunt.appendChild(nhTitle);
+            var nhSub = document.createElement("div");
+            nhSub.textContent = "Next hunt launches soon. Check back or follow announcements on Skool.";
+            nhSub.style.cssText = "font-family:\x27JetBrains Mono\x27,monospace;font-size:11px;color:rgba(255,255,255,0.1);";
+            noHunt.appendChild(nhSub);
+            heading.appendChild(noHunt);
+          }
+          // Hide native scoreboard
+          var container = heading ? heading.parentElement : document.querySelector(".container");
+          if (container) {
+            container.querySelectorAll(":scope > div, :scope > table, :scope > canvas").forEach(function(el) {
+              if (el !== heading) el.style.display = "none";
+            });
+          }
+          // Inject CSS to hide ALL scoreboard content permanently
+          var hideStyle = document.createElement("style");
+          hideStyle.textContent = ".col-md-12:not(:first-child) { display:none !important; } table.table { display:none !important; } #scoreboard-graph, #score-graph, canvas { display:none !important; }";
+          document.head.appendChild(hideStyle);
+          return;
+        }
+        if (heading) {
+          // Remove centering from parent
+          if (heading.parentElement) heading.parentElement.style.textAlign = "left";
+          heading.style.textAlign = "left";
+          heading.innerHTML = "";
+
+          if (liveHuntNum) {
+            var badge = document.createElement("span");
+            badge.textContent = "LIVE INVESTIGATION";
+            badge.style.cssText = "display:inline-block;border:1px solid #dc2626;color:#dc2626;font-family:'JetBrains Mono',monospace;font-size:0.55rem;font-weight:700;letter-spacing:2px;padding:4px 12px;margin-bottom:12px;";
+            heading.appendChild(badge);
+            heading.appendChild(document.createElement("br"));
+          }
+
+          // Split hunt name for styling (first part white, last word red)
+          var nameParts = (liveHuntName || "SCOREBOARD").split(" ");
+          var titleEl = document.createElement("div");
+          titleEl.style.cssText = "font-size:2.2rem;font-weight:700;letter-spacing:1px;margin-bottom:6px;line-height:1.2;";
+          if (nameParts.length > 1) {
+            var whitePart = document.createElement("span");
+            whitePart.textContent = nameParts.slice(0, -1).join(" ") + " ";
+            whitePart.style.cssText = "color:#ffffff;";
+            titleEl.appendChild(whitePart);
+            var redPart = document.createElement("span");
+            redPart.textContent = nameParts[nameParts.length - 1];
+            redPart.style.cssText = "color:#dc2626;";
+            titleEl.appendChild(redPart);
+          } else {
+            titleEl.textContent = nameParts[0];
+            titleEl.style.color = "#ffffff";
+          }
+          heading.appendChild(titleEl);
+
+          var sub = document.createElement("div");
+          sub.textContent = liveHuntSubtitle || "Hunt scoreboard";
+          sub.style.cssText = "font-size:0.85rem;font-weight:400;color:rgba(255,255,255,0.4);letter-spacing:0.5px;margin-bottom:1.5rem;";
+          heading.appendChild(sub);
+
+          // ── TIMER (from v11, tested) ──
+          var closesAt = liveHuntNum ? (huntConfig[liveHuntNum].closes_at || "") : "";
+          if (closesAt) {
+            var timerEl = document.createElement("div");
+            timerEl.style.cssText = "font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:1rem;";
+            heading.appendChild(timerEl);
+            function updateTimer() {
+              var now = new Date().getTime();
+              var end = new Date(closesAt).getTime();
+              var diff = end - now;
+              if (diff <= 0) { timerEl.textContent = "INVESTIGATION CLOSED"; return; }
+              var days = Math.floor(diff / 86400000);
+              var hrs = Math.floor((diff % 86400000) / 3600000);
+              var mins = Math.floor((diff % 3600000) / 60000);
+              var secs = Math.floor((diff % 60000) / 1000);
+              timerEl.textContent = "CLOSES IN " + days + "D " + hrs + "H " + mins + "M " + secs + "S";
+            }
+            updateTimer();
+            setInterval(updateTimer, 1000);
+          }
+        }
+
+        // Get live hunt stats from hunt-data (not challenges API which is filtered by prerequisites)
+        var liveConfig = liveHuntNum ? (huntConfig[liveHuntNum] || {}) : {};
+        var totalFlags = liveConfig.flags || 0;
+        var maxPoints = liveConfig.maxPoints || 0;
+        var baselines = liveConfig.baselines || {};
+
+        fetch("/api/v1/scoreboard", { credentials: "same-origin", headers: { "Content-Type": "application/json" } })
+          .then(function (r) { return r.json(); })
+          .then(function (sb) {
+          if (!sb.success || !sb.data) return;
+
+          var container = heading ? heading.parentElement : document.querySelector(".container");
+          if (!container) return;
+
+          // Always hide CTFd native scoreboard
+          var existingContent = container.querySelectorAll(":scope > div, :scope > table, :scope > canvas");
+          existingContent.forEach(function (el) { if (el !== heading && el !== heading.parentElement) el.style.display = "none"; });
+          var graph = document.getElementById("scoreboard-graph") || document.getElementById("score-graph");
+          if (graph) graph.style.display = "none";
+          var oldTables = document.querySelectorAll("table.table, .scoreboard-table");
+          oldTables.forEach(function (t) { t.style.display = "none"; });
+
+          // Subtract baselines for per-hunt scores
+          var players = sb.data.map(function (p) {
+            var baseline = baselines[p.name] || 0;
+            return { name: p.name, score: p.score - baseline, globalScore: p.score };
+          }).filter(function (p) { return p.score > 0; })
+            .sort(function (a, b) { return b.score - a.score; });
+
+          // Apply pre-computed tiebreak from hunt-data if available
+          var liveRanking = liveConfig.liveRanking || null;
+          var timeMap = {};
+          if (liveRanking && liveRanking.length > 0) {
+            var rankMap = {};
+            liveRanking.forEach(function(entry, idx) {
+              var name = typeof entry === "string" ? entry : entry.name;
+              rankMap[name] = idx;
+              if (entry.time) timeMap[name] = entry.time;
+            });
+            players.sort(function(a, b) {
+              var ra = rankMap[a.name] !== undefined ? rankMap[a.name] : 9999;
+              var rb = rankMap[b.name] !== undefined ? rankMap[b.name] : 9999;
+              return ra - rb;
+            });
+          }
+
+          // Scoreboard render (tiebreak at close time only)
+
+          if (players.length === 0) {
+            var emptyMsg = document.createElement("div");
+            emptyMsg.style.cssText = "text-align:center;padding:4rem 2rem;max-width:600px;margin:0 auto;";
+            var emptyTitle = document.createElement("div");
+            emptyTitle.textContent = "INVESTIGATION JUST STARTED";
+            emptyTitle.style.cssText = "font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,0.2);margin-bottom:12px;";
+            emptyMsg.appendChild(emptyTitle);
+            var emptySub = document.createElement("div");
+            emptySub.textContent = "No submissions yet. Scoreboard updates live as hunters solve flags.";
+            emptySub.style.cssText = "font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,0.1);";
+            emptyMsg.appendChild(emptySub);
+            container.appendChild(emptyMsg);
+            var statsBar = document.createElement("div");
+            statsBar.style.cssText = "max-width:900px;margin:2rem auto;border:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-around;padding:1.25rem 1rem;flex-wrap:wrap;gap:1rem;";
+            [{ val: sb.data.length, label: "HUNTERS" }, { val: totalFlags, label: "FLAGS" }, { val: maxPoints.toLocaleString(), label: "MAX POINTS" }].forEach(function (stat) {
+              var div = document.createElement("div");
+              div.style.cssText = "text-align:center;min-width:100px;";
+              var v = document.createElement("div");
+              v.textContent = stat.val;
+              v.style.cssText = "font-size:1.5rem;font-weight:700;color:#dc2626;";
+              div.appendChild(v);
+              var l = document.createElement("div");
+              l.textContent = stat.label;
+              l.style.cssText = "font-size:0.55rem;letter-spacing:1.5px;color:rgba(255,255,255,0.35);margin-top:4px;";
+              div.appendChild(l);
+              statsBar.appendChild(div);
+            });
+            container.appendChild(statsBar);
+            return;
+          }
+
+          var podiumWrap = document.createElement("div");
+          podiumWrap.style.cssText = "display:flex;justify-content:center;align-items:flex-end;gap:20px;padding:2.5rem 1rem 2rem;max-width:900px;margin:0 auto;flex-wrap:wrap;";
+          var order = [];
+          if (players.length >= 2) order.push({ d: players[1], p: 2 });
+          if (players.length >= 1) order.push({ d: players[0], p: 1 });
+          if (players.length >= 3) order.push({ d: players[2], p: 3 });
+          order.forEach(function (item) {
+            var isFirst = item.p === 1;
+            var card = document.createElement("div");
+            var ht = isFirst ? "180px" : "150px";
+            var border = isFirst ? "2px solid rgba(220,38,38,0.6)" : "1px solid rgba(255,255,255,0.1)";
+            card.style.cssText = "border:" + border + ";border-radius:6px;padding:1.25rem 1.5rem;text-align:center;min-width:180px;flex:1;max-width:260px;min-height:" + ht + ";display:flex;flex-direction:column;justify-content:center;";
+            var num = document.createElement("div");
+            num.textContent = item.p;
+            num.style.cssText = "font-size:" + (isFirst ? "2.2rem" : "1.8rem") + ";font-weight:700;color:" + (isFirst ? "#dc2626" : "rgba(255,255,255,0.3)") + ";margin-bottom:6px;";
+            card.appendChild(num);
+            var name = document.createElement("div");
+            name.textContent = item.d.name;
+            name.style.cssText = "font-size:" + (isFirst ? "1rem" : "0.9rem") + ";font-weight:600;color:#f0f6fc;margin-bottom:4px;";
+            card.appendChild(name);
+            var score = document.createElement("div");
+            score.textContent = item.d.score.toLocaleString();
+            score.style.cssText = "font-size:1.1rem;font-weight:700;color:#dc2626;margin-bottom:6px;";
+            card.appendChild(score);
+            var pTime = timeMap[item.d.name];
+            if (pTime) {
+              var timeEl = document.createElement("div");
+              timeEl.textContent = pTime;
+              timeEl.style.cssText = "font-family:'JetBrains Mono',monospace;font-size:0.5rem;color:rgba(255,255,255,0.2);letter-spacing:1px;margin-bottom:6px;";
+              card.appendChild(timeEl);
+            }
+            if (isFirst) {
+              var fb = document.createElement("span");
+              fb.textContent = "FIRST BLOOD";
+              fb.style.cssText = "display:inline-block;border:1px solid rgba(220,38,38,0.4);color:#dc2626;font-size:0.5rem;font-weight:700;letter-spacing:1.5px;padding:2px 8px;border-radius:2px;";
+              card.appendChild(fb);
+            }
+            podiumWrap.appendChild(card);
+          });
+
+          var tableWrap = document.createElement("div");
+          tableWrap.style.cssText = "max-width:600px;margin:0 auto 3rem;padding:0 1rem;";
+          var table = document.createElement("table");
+          table.style.cssText = "width:100%;border-collapse:collapse;";
+          var thead = document.createElement("thead");
+          var headerRow = document.createElement("tr");
+          headerRow.style.cssText = "border-bottom:1px solid rgba(220,38,38,0.3);";
+          ["RANK", "HUNTER", "LAST FLAG", "SCORE"].forEach(function (col, i) {
+            var th = document.createElement("th");
+            th.textContent = col;
+            th.style.cssText = "padding:12px 8px;font-size:0.65rem;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,0.4);" + (i === 0 ? "width:50px;text-align:center;" : "") + (i === 3 ? "width:100px;text-align:right;" : "") + (i === 1 ? "text-align:left;" : "") + (i === 2 ? "width:140px;text-align:center;color:rgba(255,255,255,0.25);" : "");
+            headerRow.appendChild(th);
+          });
+          thead.appendChild(headerRow);
+          table.appendChild(thead);
+          var tbody = document.createElement("tbody");
+          var startIdx = Math.min(3, players.length);
+          for (var i = startIdx; i < players.length; i++) {
+            var p = players[i];
+            var tr = document.createElement("tr");
+            tr.style.cssText = "border-bottom:1px solid rgba(255,255,255,0.04);";
+            var tdR = document.createElement("td"); tdR.textContent = i + 1; tdR.style.cssText = "padding:12px 8px;font-size:0.85rem;font-weight:600;color:rgba(255,255,255,0.4);text-align:center;width:70px;"; tr.appendChild(tdR);
+            var tdN = document.createElement("td"); tdN.textContent = p.name; tdN.style.cssText = "padding:12px 8px;font-size:0.85rem;font-weight:500;color:#f0f6fc;text-align:left;"; tr.appendChild(tdN);
+            var tdT = document.createElement("td"); tdT.textContent = timeMap[p.name] || ""; tdT.style.cssText = "padding:12px 8px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:rgba(255,255,255,0.2);width:140px;"; tr.appendChild(tdT);
+            var tdS = document.createElement("td"); tdS.textContent = p.score.toLocaleString(); tdS.style.cssText = "padding:12px 8px;text-align:right;font-size:0.9rem;font-weight:700;color:#dc2626;width:100px;"; tr.appendChild(tdS);
+            tbody.appendChild(tr);
+          }
+          table.appendChild(tbody);
+          tableWrap.appendChild(table);
+
+          container.appendChild(podiumWrap);
+
+          var statsBar = document.createElement("div");
+          statsBar.style.cssText = "max-width:900px;margin:0 auto 2rem;border:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-around;padding:1.25rem 1rem;flex-wrap:wrap;gap:1rem;";
+          [{ val: players.length, label: "HUNTERS" }, { val: totalFlags, label: "FLAGS" }, { val: maxPoints.toLocaleString(), label: "MAX POINTS" }].forEach(function (stat) {
+            var div = document.createElement("div");
+            div.style.cssText = "text-align:center;min-width:100px;";
+            var v = document.createElement("div");
+            v.textContent = stat.val;
+            v.style.cssText = "font-size:1.5rem;font-weight:700;color:#dc2626;";
+            div.appendChild(v);
+            var l = document.createElement("div");
+            l.textContent = stat.label;
+            l.style.cssText = "font-size:0.55rem;letter-spacing:1.5px;color:rgba(255,255,255,0.35);margin-top:4px;";
+            div.appendChild(l);
+            statsBar.appendChild(div);
+          });
+          container.appendChild(statsBar);
+
+          if (players.length > 3) container.appendChild(tableWrap);
+
+
+
+        }).catch(function (err) { console.error("Scoreboard enhancement failed:", err); });
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
